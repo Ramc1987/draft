@@ -1,0 +1,56 @@
+.inputs {
+  width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.item-input {
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+.check {
+  font-size: 18px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.check-input {
+  position: absolute;
+  appearance: none;
+
+  &:checked + .checkbox::before {
+    display: block;
+  }
+}
+
+.checkbox {
+  position: absolute;
+  background: rgb(230, 225, 225);
+  width: 20px;
+  height: 20px;
+  margin-left: -25px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background: #b95b5b;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    display: none;
+  }
+}

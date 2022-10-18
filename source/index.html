@@ -4,13 +4,72 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Document</title>
 </head>
 <body>
-  <h1>hello</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptas aspernatur veniam? Iusto, ipsum aperiam.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptas aspernatur veniam? Iusto, ipsum aperiam.</p>
-  <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laudantium quis voluptatem nulla quam vel consectetur assumenda dignissimos officia labore!</a>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, veniam.</p>
+  <!-- кнопки -->
+  <div class="buttons">
+    <h2 class="title">Buttons</h2>
+    <button class="button button--one" type="button">Регистрация</button>
+    <button class="button button--two" type="button">Регистрация</button>
+    <button class="button button--three" type="button">Регистрация</button>
+  </div>
+
+  <!-- чекбокс -->
+  <div class="inputs">
+    <h2 class="title">Inputs</h2>
+    <ul class="input-list">
+      <li class="item-input">
+        <label class="check">
+          <input class="check-input hidden" type="checkbox" name="card" value="Ford" checked>
+            <span class="checkbox"></span>
+              Инвентарь
+        </label>
+      </li>
+      <li class="item-input">
+        <label class="check">
+          <input class="check-input hidden" type="checkbox" name="card" value="Mustang">
+            <span class="checkbox"></span>
+              Инвентарь
+        </label>
+      </li>
+      <li class="item-input">
+        <label class="check">
+          <input class="check-input hidden" type="checkbox" name="card" value="BMW">
+            <span class="checkbox"></span>
+              Инвентарь
+        </label>
+      </li>
+    </ul>
+  </div>
+
+  <!-- радиокнопки -->
+  <div class="radio-container">
+    <h2 class="title">Радио Кнопки</h2>
+      <ul class="radio-list">
+        <li class="radio-item">
+          <label class="radio">
+            <input class="radio-input" type="radio"  name="car" value="ford" required>
+              <span class="radiobox"></span>
+              Регистрация
+          </label>
+        </li>
+        <li class="radio-item">
+          <label class="radio">
+            <input class="radio-input" type="radio" name="car" value="BMW" >
+              <span class="radiobox"></span>
+              Регистрация
+          </label>
+        </li>
+        <li class="radio-item">
+          <label class="radio">
+            <input class="radio-input" type="radio" name="car" value="shkoda" >
+              <span class="radiobox"></span>
+              Регистрация
+          </label>
+        </li>
+    </ul>
+  </div>
 </body>
 </html>
